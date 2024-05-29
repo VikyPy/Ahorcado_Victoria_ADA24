@@ -24,10 +24,10 @@ lista_casa = ["-","-","-","-"]
 #             0   1    2   3
 lista_vacia = []
 
-vida = 0
+vida = 5
 
 def adivinar(letra):
-      if letra.lower() == "a":
+      if letra.lower() == "a": #minus = letra.lower()
          lista_casa[1] = "a"
          lista_casa[3] = "a"
 
@@ -52,4 +52,8 @@ while True:
       print(lista_casa)
 
       if adivinar_casa == lista_casa:
+          print("Adivinaste!")
+          break
+      elif len(lista_vacia) == vida:
+          print("game over")
           break
