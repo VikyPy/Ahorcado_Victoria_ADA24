@@ -169,7 +169,7 @@ while True:
       letra = validar_letra("")
       
       resultado()
-      print(guion(letra))
+      guion(letra)
 
       if adivinar_casa == lista_casa:
           print("► (Lo hiciste!! \nAdivinaste la palabra!!)> (o´▽`o)♥")
